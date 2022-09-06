@@ -171,6 +171,7 @@ margin-bottom: 10px;
     padding-top: 10px;
     padding-bottom: 48px;
     padding-left: 40px;
+    //  overflow-y: scroll;
     >.container-mob{
       height: 100%;
       display: flex;
@@ -228,7 +229,9 @@ color: #757575;}
 
    .mob-soc-list{
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+
 
    }
     .mob-soc-list li:not(:last-child){
