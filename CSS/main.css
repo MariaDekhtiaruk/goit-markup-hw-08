@@ -93,8 +93,8 @@ section {
 
 .header {
   border-bottom: 1px solid #f5f4fa;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -185,8 +185,8 @@ section {
 
 .contact {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--title-color);
   align-items: center;
@@ -196,6 +196,12 @@ section {
 }
 .contact:hover, .contact:focus {
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .contact__icon {
@@ -211,12 +217,6 @@ section {
 .header .container {
   display: flex;
   align-items: center;
-  width: 100%;
-}
-@media screen and (min-width: 1200px) {
-  .header .container {
-    width: 1200px;
-  }
 }
 
 .header__navigation {
@@ -224,7 +224,7 @@ section {
 }
 @media screen and (min-width: 1200px) {
   .header__navigation {
-    margin-left: 50px;
+    margin-left: 93px;
   }
 }
 
@@ -297,12 +297,15 @@ section {
   padding-top: 10px;
   padding-bottom: 48px;
   padding-left: 40px;
+  overflow-y: scroll;
 }
 .mobile-menu > .container-mob {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 15px;
 }
 
 .menu-close {
@@ -384,7 +387,7 @@ section {
   margin: 0 auto;
   text-align: center;
   padding-top: 118px;
-  padding-bottom: 60px;
+  padding-bottom: 118px;
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -393,8 +396,6 @@ section {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    padding-top: 118px;
-    padding-bottom: 204px;
     background-image: var(--bg-gradiant), url(../Images/Hero_tab_1x.jpg);
   }
 }
@@ -416,9 +417,15 @@ section {
   }
 }
 
-.container .hero-content {
-  text-align: left;
+.hero-content {
+  text-align: center;
   width: 100%;
+}
+@media screen and (max-width: 1199px) {
+  .hero-content {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
 }
 
 .hero-name {
@@ -431,10 +438,16 @@ section {
   width: 100%;
   margin: 0 auto;
 }
+@media screen and (max-width: 1199px) {
+  .hero-name {
+    width: 360px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero-name {
     font-size: 44px;
     line-height: 1.36;
+    width: 696px;
   }
 }
 
@@ -500,8 +513,14 @@ section {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--header-color);
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .about-title {
+    text-align: left;
+  }
 }
 
 .about-text {
@@ -529,6 +548,14 @@ section {
   text-align: center;
   color: var(--header-color);
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .works, .clients-title, .team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
 }
 
 .works-list {
@@ -768,7 +795,7 @@ section {
   margin-bottom: 9px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .address-thumb {
     margin-bottom: 60px;
     text-align: center;
@@ -807,6 +834,7 @@ section {
   .footer__footer-soc {
     margin-right: 93px;
     margin-bottom: 0px;
+    text-align: left;
   }
 }
 

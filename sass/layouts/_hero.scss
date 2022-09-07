@@ -11,7 +11,7 @@
   margin: 0 auto;
   text-align: center;
   padding-top: 118px;
-  padding-bottom: 60px;
+  padding-bottom:118px;
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -19,9 +19,7 @@
     url(../Images/Hero_mob_2x.jpg);
   }
  @media screen and (min-width: 768px) {
-   padding-top: 118px;
-  padding-bottom: 204px;
-  background-image: var(--bg-gradiant),
+    background-image: var(--bg-gradiant),
     url(../Images/Hero_tab_1x.jpg);
      @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -30,9 +28,10 @@
     url(../Images/Hero_tab_2x.jpg);
   }
   }
-   @media screen and (min-width: 1200px) {
-    padding-top: 200px;
+   @media screen and (min-width: 1200px) {   
+  padding-top: 200px;
   padding-bottom: 200px;
+
   background-image: var(--bg-gradiant),
     url(../Images/Hero_desk_1x.jpg);
      @media (min-device-pixel-ratio: 2),
@@ -45,10 +44,13 @@
   
 }
 
-.container .hero-content {
-  text-align: left;
+ .hero-content {
+  text-align:center;
   width: 100%;
-}
+  @media screen and (max-width: 1199px) {
+  padding-top: 118px;
+  padding-bottom: 118px;  
+}}
 .hero-name {
   font-weight: 900;
   font-size: 26px;
@@ -59,10 +61,13 @@
 
   width: 100%;
   margin: 0 auto;
-
+  
+@media screen and (max-width: 1199px) {  
+ width: 360px;}
 @media screen and (min-width: 1200px) {
   font-size: 44px;
-  line-height: 1.36;}
+  line-height: 1.36;
+ width: 696px;}
 }
 .button-hero {
   font-family: inherit;

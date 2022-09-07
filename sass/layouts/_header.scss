@@ -1,7 +1,7 @@
 .header {
   border-bottom: 1px solid #f5f4fa;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   @media screen and (min-width: 768px) {
   padding-top: 26px;
   padding-bottom: 26px;
@@ -10,7 +10,7 @@
   padding-top: 24px;
   padding-bottom: 25px;
 }
-}
+}   
 .logo__web {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -62,6 +62,7 @@ font-size: 26px;
   &:focus {
     color: var(--accent-color);
   }
+   
 }
 
 .navigation__link.current::after {
@@ -79,8 +80,8 @@ font-size: 26px;
 
 .contact {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--title-color);
   align-items: center;
@@ -92,6 +93,10 @@ font-size: 26px;
   &:focus {
     color: var(--accent-color);
   }
+    @media screen and (min-width: 1200px) {
+     font-size: 14px;
+  line-height: 1.14;
+  }  
 }
 
 .contact__icon {
@@ -105,15 +110,13 @@ font-size: 26px;
 .header .container {
   display: flex;
   align-items: center;
-  width: 100%;
-  @media screen and (min-width: 1200px) {
-  width: 1200px;
-}}
+  
+}
 
 .header__navigation {
    margin-left: 87px;
    @media screen and (min-width: 1200px) {
-  margin-left: 50px;
+  margin-left: 93px;
 }}
 .navigation__list {
   display: flex;
@@ -171,14 +174,17 @@ margin-bottom: 10px;
     padding-top: 10px;
     padding-bottom: 48px;
     padding-left: 40px;
-    //  overflow-y: scroll;
-    >.container-mob{
+     overflow-y: scroll;
+    > .container-mob{
       height: 100%;
       display: flex;
       flex-direction: column;
 justify-content: space-between;
+padding-left: 40px;
+padding-right: 15px;
     }
   } 
+    
   
   .menu-close{
     display: block;
