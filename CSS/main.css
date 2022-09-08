@@ -383,11 +383,11 @@ section {
   background-position: center;
   background-size: cover;
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 118px;
-  padding-bottom: 118px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -408,6 +408,7 @@ section {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    height: 600px;
     background-image: var(--bg-gradiant), url(../Images/Hero_desk_1x.jpg);
   }
 }
